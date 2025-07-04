@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2 Mecanicas | GDD Nombre del Juego</title>
+    <link rel="stylesheet" href="../css/gddStyle.css">
+    <link rel="stylesheet" href="../css/partes.css">
+</head>
+<body>
+    <!-- Header igual que en tu index.html -->
+    <header>
+        
+        <a href="index.html" class="logo-link">
+            <img src="../media/rate logo pagina.png" alt="Logo del Juego" class="logo-img">
+        </a>
+        <div class="header-right-space"></div>
+    </header>
+
+    <main class="detalle-contenido">
+        <article class="seccion-detalle">
+            <h2>1.2 Mecanicas</h2>
+            
+            <p>Aqui pondre mas en detalle cada una de las mecanicas centradas en la pagina anterior, siguiendo un plan de desarrollo claro, esta parte solo sera acerca de la programacíon la siguiente, la 1.3 sera acerca de la parte grafica</p>
+            
+            <h3>Concepto Central</h3>
+            <p>La idea central de las mecanicas de nuestro personaje deben basarse en el principio basico de que deben sentirse correctas a la hora de jugar, es decir, que incluso con un mundo vacio, sin enemigos ni escenario definido puedieras estar horas practicando combos o tecnicas, un ejemplo de esto podria ser como en el lol, donde podrias entrar a una persona a practicar solo farmeo y dependiendo el champ que elijas esto seria un reto o divertido, ya que por si solo la mecanica requiere de esto, un ejemplo con nuestro personaje seria el tema del parry, es una mecanica dificil de dominar, que sumadas a las otras mecanicas puede crar un gameplay disfrutable, la idea es que sea vistoso, bonito, pero sobre todo funcional, que el ataque se sienta como un golpe real, con una hitbox justa y no mal colocada, que al recibir daño mientras haces roll no se sienta como un castigo injusto, y para esto debemos seguir determinadas pautas de calidad que ayudaran a que todo se sienta en su lugar.</p>
+        
+            <div class="nota">
+                <p><strong>Nota:</strong>Gran parte de la informacíon aqui llevó su respectivo analisis y investigacion en videos y textos, sim ebargo tambien se basa en mi experiencia jugando juegos, asi que podria fallar o tener una vision muy diferente a la que podrian tener ustedes, por eso si quiern pueden aportar su opinion.</p>
+            </div>
+
+            <h3>Movimiento</h3>
+            <p>para el movimiento crearemos sistemas que podamos re utilizar, usando como base central maquinas de esttado, abajo estaran los links y recursos a los tutoriales que debemos ver para esto, tambien usaremos un sistema de manejo de escenas por modulos, es decir crearemos componenetes ailados que puedan ser facilemente re  utilizados como nodos, por ej la barra de via es algo que no solo nuestro personaje usara, esta puede ir en un componente aislado en nodo, para asi solo poner en cada cosa que necesite tener vida, lo mismo para el componente de daño, esto estara mejor explicado en las guias de como crear  un sistema de combate.</p>
+
+            <h3>Combate</h3>
+            <p>Para el sistema de combate, debemos crear nuestro propio sistema, para las bases de esta veremos el tutorial completo e gd script, podemos tratar de usar las bases de el sistema que habia creado de combos, sin embargo a ese sistema  le hacen falta mejoras, con arrays o librerias, que hagan que esta manera de combatir sea mucho mas intuitiva a nivel de codigo y con muchos menos bugs, ya que solo logre hacer 1 combo debido a lo mal  optimizado que esta no termine el combo con click derecho a que me habria tomado 4 horas hacer ese codigo, mas las animaciones y hitboxes, lo que lo hace viable para funcionar pero dificil de replicar en el tiempo y arreglar bugs por ejemplo.</p>
+            
+            <h3>Tutoriales</h3>
+            <p>https://www.youtube.com/watch?v=bX-C6C03Jnc&t=780s</p>
+            <p>https://www.youtube.com/watch?v=NOsWOCtIYQ8&t=68s</p>
+            <p>https://www.youtube.com/watch?v=pbeGPWRfTrc</p>
+            <p>https://www.youtube.com/watch?v=8Sm27Q9SpTM&list=PL9k9OyMW441ojtH353h-wm77stEWVlWdp</p>
+
+            <div class="navegacion-secciones">
+                <a href="index.html" class="btn-seccion anterior">Volver al Índice</a>
+                <a href="parte 1.3.html" class="btn-seccion">Siguiente: 1.3 Diseño conceptual</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Scripts igual que en tu index.html -->
+    <script src="../js/indexJS.js"></script>
+</body>
+</html>

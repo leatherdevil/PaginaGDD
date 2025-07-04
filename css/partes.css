@@ -1,0 +1,200 @@
+/* Estilos base - Coherentes con indexStyle */
+html {
+    font-size: 1em;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER - Igual que en el index */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 8vh;
+    min-height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* [Todos los estilos del header, hamburguesa y menú lateral igual que en tu indexStyle] */
+
+/* CONTENIDO PRINCIPAL PARA PÁGINAS DE DETALLE */
+.detalle-contenido {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.seccion-detalle {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid #4dabf7;
+}
+
+.seccion-detalle h2 {
+    color: #4dabf7;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.seccion-detalle h3 {
+    color: #a3d3ff;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.seccion-detalle p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.seccion-detalle ul, 
+.seccion-detalle ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.seccion-detalle li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Bloques de código o ejemplos */
+.codigo-ejemplo {
+    background-color: #252525;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    border-left: 3px solid #4dabf7;
+    overflow-x: auto;
+}
+
+/* Tablas */
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.tabla-datos th {
+    background-color: #252525;
+    color: #4dabf7;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.tabla-datos td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #333;
+}
+
+.tabla-datos tr:hover {
+    background-color: rgba(77, 171, 247, 0.05);
+}
+
+/* Imágenes y multimedia */
+.imagen-destacada {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Notas y alertas */
+.nota {
+    background-color: rgba(77, 171, 247, 0.1);
+    border-left: 4px solid #4dabf7;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.nota-importante {
+    background-color: rgba(247, 77, 77, 0.1);
+    border-left: 4px solid #f74d4d;
+}
+
+/* Botones de navegación */
+.navegacion-secciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn-seccion {
+    background-color: #4dabf7;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-seccion:hover {
+    background-color: #3a8bc8;
+}
+
+.btn-seccion.anterior {
+    background-color: #333;
+    border: 1px solid #4dabf7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .seccion-detalle {
+        padding: 1.5rem;
+    }
+    
+    .seccion-detalle h2 {
+        font-size: 1.5rem;
+    }
+    
+    .seccion-detalle h3 {
+        font-size: 1.2rem;
+    }
+    
+    .navegacion-secciones {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-seccion {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .seccion-detalle {
+        padding: 1rem;
+        border-radius: 0;
+    }
+    
+    .seccion-detalle h2 {
+        font-size: 1.3rem;
+    }
+}
