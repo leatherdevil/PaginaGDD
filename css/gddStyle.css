@@ -491,3 +491,16 @@ header {
         grid-template-columns: 1fr;
     }
 }
+
+.nota {
+    background-color: rgba(77, 171, 247, 0.1);
+    border-left: 4px solid #4dabf7;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.nota-importante {
+    background-color: rgba(247, 77, 77, 0.1);
+    border-left: 4px solid #f74d4d;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1 Primer personaje | GDD Nombre del Juego</title>
+    <link rel="stylesheet" href="../css/gddStyle.css">
+    <link rel="stylesheet" href="../css/partes.css">
+</head>
+<body>
+    <!-- Header igual que en tu index.html -->
+    <header>
+        
+        <a href="../index.html" class="logo-link">
+            <img src="../media/rate logo pagina.png" alt="Logo del Juego" class="logo-img">
+        </a>
+        <div class="header-right-space"></div>
+    </header>
+
+    <main class="detalle-contenido">
+        <article class="seccion-detalle">
+            <h2>2.1 Enemigos</h2>
+            
+            <p>Nuestro siguiente paso en nuestra guia de desarrollo seran los enemigos, este elemento es casi igual de importante que el personaje, estos deben poder ser atacados, atacar y tener animaciones y habilidades unicas, las cuales seran explicadas en 2.2 a detalle, en esencia estos enemigos iran tematizados a cada sala y debemos crear aproximadamente 8 diferentes por cada sala, en muchos podremos reutilizar muchos recursos y solo crearles lo que los hace unicos, por ej un ataque especial o velocidad, cada uno tiene variables diferentes pero en esencia casi el mismo codigo.</p>
+            
+            <h3>Primera fase</h3>
+            <p>una manera rapida de avanzar podria ser usar los componenentes de vida que creamos para el pj ajustandolos a uno estandar para enemigos, ademas un componenete de hitbox donde lo que cambiemos sea solo la forma, pero que ataque a nuestro jugador usando el mismo codigo, luego desarrollaremos un componenete de movimiento y deteccion del personaje tambien iguales para todos, y una vez ya tenemos estos elementos lo que me parece mas coherente es, crear paquetes de 8 enemigos y repartirlos entre los programadores para que programen estos comportamientos unicos de esos 8 enemigos que eligieron para cada sala, en total serian 4 salas diferentes, en tematica, para iniciar podemos desarrollar 2</p>
+            
+            <h3>Primeros 8 enemigos</h3>
+            <ul>
+                <li>Enemigo 1: este atacará a nuestro personaje a melee, además este aguantará unos cuantos hits del personaje, al ser golpeado por primera vez será empujado y si en poco tiempo no es eliminado se molestará y se moverá más rápido</li>
+                <li>Enemigo 2: realiza cargas o dashes rápidos y al recorrer la distancia queda cansado unos segundos</li>
+                <li>Enemigo 3: Enemigo lento, pero con golpes fuertes</li>
+                <li>Enemigo 4: Ataques a distancia</li>
+                <li>Enemigo 5: Enemigo que se acerca y al morir hace daño o deja área de daño persistente</li>
+                <li>Enemigo 6: Enemigo que invoca mas enemigos pequeños hasta que muera</li>
+                <li>Enemigo 7: Enemigo que salta y se acerca saltando</li>
+                <li>Enemigo 8: Enemigo que stunea</li>
+
+            </ul>
+            
+            <h3>Plan de desarrollo</h3>
+            <p>Lo ideal es que estos nuevos comportamientos tambien podamos re usarlos en quizas otros enemigos mas adelantes, quizas dos enemigos que usen sprites y se vean diferentes pero que hagan casi lo mismo, cambiandoles parametros como velocidad o rango, pero en esencia lo mismo, por ej el enemigo grande que ataca lento, podria ser usado en otro que es pequeño pero ataca medianamente lento, este blog se ira actualizando a medida que desarrollemos nuevos conceptos de enemigos.</p>
+            
+            
+            <div class="navegacion-secciones">
+                <a href="../index.html" class="btn-seccion anterior">Volver al Índice</a>
+                <a href="parte 2.2.html" class="btn-seccion">Siguiente: 2.2</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Scripts igual que en tu index.html -->
+    <script src="../js/indexJS.js"></script>
+</body>
+</html>
